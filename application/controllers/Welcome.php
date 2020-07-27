@@ -22,4 +22,9 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message to my wall');
 	}
+
+	public function nash()
+	{
+		$this->load->view('nash');
+	}
 }
