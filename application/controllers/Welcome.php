@@ -20,7 +20,33 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$curl = curl_init();
+        $data = json_encode(array(
+		     'name' => 'test data',
+             'notes' => 'dataset',
+             'owner_org'=> 'test org',
+      
+		 ));
+
+        curl_setopt_array($curl, array(
+        CURLOPT_URL => "https://demo.ckan.org/api/3/action/package_create",
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => "",
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 0,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => "POST",
+        CURLOPT_POSTFIELDS => $data,
+       CURLOPT_HTTPHEADER => array(
+                  "Authorization: 2002fbaa-3f28-4515-a90f-9f7868d0dd8a"
+                ),
+          ));
+
+        $response = curl_exec($curl);
+        curl_close($curl);
+      
+        echo $response;
 	}
 
 	public function nash()
