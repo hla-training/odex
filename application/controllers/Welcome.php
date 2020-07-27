@@ -20,17 +20,17 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		echo "Start";
-		$curl = curl_init();
-        $data = json_encode(array(
-		     'name' => 'test data',
-             'notes' => 'dataset',
-             'owner_org'=> 'test org',
-      
+		 $curl = curl_init();
+         $data = json_encode(array(
+		    'url' => 'http://odex.data.gov.my/data/test.csv',
+            'name' => 'test name',
+            'description'=> 'descriptions',
+         'format'=>'csv', 
+         'package_id' => 'package name'
 		 ));
 
         curl_setopt_array($curl, array(
-        CURLOPT_URL => "https://demo.ckan.org/api/3/action/package_create",
+        CURLOPT_URL => "https://demo.ckan.org/api/3/action/resource_create",
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
         CURLOPT_MAXREDIRS => 10,
@@ -39,15 +39,15 @@ class Welcome extends CI_Controller {
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => "POST",
         CURLOPT_POSTFIELDS => $data,
-       CURLOPT_HTTPHEADER => array(
-                  "Authorization: 2002fbaa-3f28-4515-a90f-9f7868d0dd8a"
+        CURLOPT_HTTPHEADER => array(
+                  "Authorization: 6a7b52e5-28a5-42d9-a977-9a2e3bc26d22"
                 ),
           ));
 
         $response = curl_exec($curl);
         curl_close($curl);
-      
-		echo $response;
+
+		echo  $response;
 		die;
 	}
 
