@@ -26,7 +26,7 @@ class Welcome extends CI_Controller {
 		    'url' => 'http://odex.data.gov.my/data/test.csv',
             'name' => 'test name',
             'description'=> 'descriptions',
-         'format'=>'csv', 
+            'format'=>'csv', 
          'package_id' => 'package name'
 		 ));
 
@@ -49,7 +49,7 @@ class Welcome extends CI_Controller {
         curl_close($curl);
 
 		echo  $response;
-		die;
+		
 	}
 
 	public function nash()
