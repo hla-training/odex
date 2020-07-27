@@ -25,6 +25,6 @@ class Welcome extends CI_Controller {
 
 	public function nash()
 	{
-		$this->load->view('nash');
+		$this->load->view('welcome_message');
 	}
 }
