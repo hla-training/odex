@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-qsvsav
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,4 +37,4 @@ qsvsav
 
 </body>
 </html>
->>>>>>> b169321e0262b4b530f59ca68eec1bd64db0021d
+
