@@ -20,6 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		echo "Test";
 		$curl = curl_init();
         $data = json_encode(array(
 		     'name' => 'test data',
