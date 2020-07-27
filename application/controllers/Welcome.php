@@ -20,7 +20,8 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		 $curl = curl_init();
+		echo "test"; 
+		$curl = curl_init();
          $data = json_encode(array(
 		    'url' => 'http://odex.data.gov.my/data/test.csv',
             'name' => 'test name',
