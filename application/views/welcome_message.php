@@ -74,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p>Nasharyati 27/07/2020</p>
 	
 	<br>
-	<p>HAI OD!!!!!</p>
+	<p>HAI OD!!!!!..</p>
 	<p>HAI NASH!!!!!</p>
 	</div>
 
