@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		echo "Test";
+		echo "Start";
 		$curl = curl_init();
         $data = json_encode(array(
 		     'name' => 'test data',
@@ -47,7 +47,8 @@ class Welcome extends CI_Controller {
         $response = curl_exec($curl);
         curl_close($curl);
       
-        echo $response;
+		echo $response;
+		die;
 	}
 
 	public function nash()
