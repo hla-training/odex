@@ -101,7 +101,7 @@ public function ckanresource2()
 $curl = curl_init();
 $data = json_encode(array(
 'url' => 'http://103.253.145.248/razif/odex/data/sample.csv',
-'name' => 'test name',
+'name' => 'testname',
 'description'=> 'descriptions',
 'format'=>'csv',
 'package_id' => 'package name'
