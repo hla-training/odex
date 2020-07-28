@@ -29,16 +29,14 @@ class Welcome extends CI_Controller {
 	}
 
 	public function getdataapi()
-
-	{
-	
-	$curl = curl_init();
-	$url = 'https://api.bnm.gov.my/public/base-rate/BKKBMYKL';
-	curl_setopt_array($curl, array(
-	CURLOPT_URL => $url,
-	CURLOPT_RETURNTRANSFER => true,
-	CURLOPT_ENCODING => "",
-	CURLOPT_MAXREDIRS => 10,
+ {
+ $curl = curl_init();
+ $url = 'https://api.bnm.gov.my/public/base-rate/BKKBMYKL';
+ curl_setopt_array($curl, array(
+ CURLOPT_URL => $url,
+ CURLOPT_RETURNTRANSFER => true,
+ CURLOPT_ENCODING => "",
+ CURLOPT_MAXREDIRS => 10,
  CURLOPT_TIMEOUT => 0,
  CURLOPT_FOLLOWLOCATION => true,
  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
@@ -51,7 +49,6 @@ class Welcome extends CI_Controller {
  $response = curl_exec($curl);
  curl_close($curl);
  $results = json_decode($response, true);
- print_r($results);
  if(strpos($url,'bnm') !== false){
 
  $resultso = $results["data"];
@@ -79,7 +76,10 @@ class Welcome extends CI_Controller {
 
  }
  }
- 
+
+
+
+
  public function ckandataset()
  {
 	$curl = curl_init();
@@ -139,6 +139,7 @@ class Welcome extends CI_Controller {
  echo $response;
 
  }
+
  public function datacleaning()
  {
  exec('python3 datacleaning.py');
