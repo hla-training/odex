@@ -99,7 +99,7 @@ class Welcome extends CI_Controller {
 		{
 		$curl = curl_init();
 		$data = json_encode(array(
-		'url' => 'http://103.253.145.248/zaimar/odex/data/sample.csv',
+		'url' => 'http://103.253.145.248/nash/odex/data/sample.csv',
 		'name' => 'test name',
 		'description'=> 'descriptions',
 		'format'=>'csv',
