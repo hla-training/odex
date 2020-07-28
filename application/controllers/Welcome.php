@@ -28,7 +28,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('nash');
 	}
 
-	public function getdataapi()
+	public function getdataapi2()
 	{
 	$curl = curl_init();
 	$url = 'https://api.bnm.gov.my/public/interest-rate';
@@ -69,7 +69,7 @@ class Welcome extends CI_Controller {
 	}
 	}
 
-	public function ckandataset()
+	public function ckandataset2()
 	{
 		$curl = curl_init();
 		$data = json_encode(array(
@@ -97,7 +97,7 @@ class Welcome extends CI_Controller {
 		echo $response;
 		}	
 
-		public function ckanresource()
+		public function ckanresource2()
 		{
 		$curl = curl_init();
 		$data = json_encode(array(
