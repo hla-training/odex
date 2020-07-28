@@ -31,7 +31,7 @@ class Welcome extends CI_Controller {
 	public function getdataapi()
 	{
 	$curl = curl_init();
-	$url = 'https://api.bnm.gov.my/public/exchange-rate';
+	$url = 'https://api.bnm.gov.my/public/interest-rate';
 	curl_setopt_array($curl, array(
 	CURLOPT_URL => $url,
 	CURLOPT_RETURNTRANSFER => true,
