@@ -104,7 +104,7 @@ $data = json_encode(array(
 'name' => 'testname2',
 'description'=> 'descriptions',
 'format'=>'csv',
-'package_id' => 'package name'
+'package_id' => 'testrazif'
 ));
 curl_setopt_array($curl, array(
 CURLOPT_URL => "https://demo.ckan.org/api/3/action/resource_create",
