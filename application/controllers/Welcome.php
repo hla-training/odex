@@ -69,7 +69,7 @@ return false;
 }
 }
 
-public function ckandataset()
+public function ckandataset2()
 {
     $curl = curl_init();
 $data = json_encode(array(
@@ -96,7 +96,7 @@ curl_close($curl);
 echo $response;
 }
 
-public function ckanresource()
+public function ckanresource2()
 {
 $curl = curl_init();
 $data = json_encode(array(
@@ -124,7 +124,7 @@ $response = curl_exec($curl);
 curl_close($curl);
 echo $response;
 }
-public function datacleaning()
+public function datacleaning2()
 {
 exec('python3 datacleaning.py');
 }
