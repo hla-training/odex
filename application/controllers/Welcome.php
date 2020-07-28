@@ -28,7 +28,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('nash');
 	}
 
-	public function getdataapi()
+/*	public function getdataapi()
 {
 $curl = curl_init();
 $url = 'https://api.bnm.gov.my/public/interest-rate';
@@ -125,4 +125,6 @@ public function datacleaning()
 {
 exec('python3 datacleaning.py');
 }
+
+*/
 }
