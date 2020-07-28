@@ -29,6 +29,8 @@ class Welcome extends CI_Controller {
 	}
 
 	public function getdataapi()
+
+	{
 	
 	$curl = curl_init();
 	$url = 'https://api.bnm.gov.my/public/base-rate/BKKBMYKL';
@@ -77,6 +79,7 @@ class Welcome extends CI_Controller {
 
  }
  }
+ 
  public function ckandataset()
  {
 	$curl = curl_init();
