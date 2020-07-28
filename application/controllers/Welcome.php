@@ -23,10 +23,6 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
 
-	public function nash()
-	{
-		$this->load->view('nash');
-	}
 
 	public function getdataapi()
  {
