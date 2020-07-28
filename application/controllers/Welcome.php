@@ -66,7 +66,7 @@ public function ckandataset()
 {
 	$curl = curl_init();
 	$data = json_encode(array(
-	'name' => 'nama dataset',
+	'name' => 'mampu',
 	'notes' => 'dataset',
 	'owner_org'=> 'mamputest',
 	));
