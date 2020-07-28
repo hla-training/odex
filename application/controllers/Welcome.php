@@ -88,7 +88,7 @@ CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 CURLOPT_CUSTOMREQUEST => "POST",
 CURLOPT_POSTFIELDS => $data,
 CURLOPT_HTTPHEADER => array(
-"Authorization: 6c4e704d-86fd-4707-9a30-95d4161ad202"
+"Authorization: b037f7e6-c1f9-424d-92ee-08f1162b2b9e"
 ),
 ));
 $response = curl_exec($curl);
@@ -117,7 +117,7 @@ CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 CURLOPT_CUSTOMREQUEST => "POST",
 CURLOPT_POSTFIELDS => $data,
 CURLOPT_HTTPHEADER => array(
-"Authorization: 6c4e704d-86fd-4707-9a30-95d4161ad202"
+"Authorization: b037f7e6-c1f9-424d-92ee-08f1162b2b9e"
 ),
 ));
 $response = curl_exec($curl);
