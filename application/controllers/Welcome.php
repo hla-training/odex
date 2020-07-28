@@ -105,7 +105,7 @@ class Welcome extends CI_Controller {
 		'name' => 'test name',
 		'description'=> 'descriptions',
 		'format'=>'csv',
-		'package_id' => 'package name'
+		'package_id' => 'nama'
 		));
 		curl_setopt_array($curl, array(
 		CURLOPT_URL => "https://demo.ckan.org/api/3/action/resource_create",
