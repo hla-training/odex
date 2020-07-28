@@ -45,6 +45,7 @@ curl_close($curl);
 $results = json_decode($response, true);
 if(strpos($url,'bnm') !== false){
 $resultso = $results["data"];
+print_r($results);
 } else {
 	$resultso = $results["result"]["records"];
 	}
