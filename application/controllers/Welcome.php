@@ -31,7 +31,7 @@ class Welcome extends CI_Controller {
 	public function getdataapi()
 {
 $curl = curl_init();
-$url = 'https://api.bnm.gov.my/public/base-rate/BKKBMYKL';
+$url = 'https://api.bnm.gov.my/public/interest-rate';
 curl_setopt_array($curl, array(
 CURLOPT_URL => $url,
 CURLOPT_RETURNTRANSFER => true,
@@ -86,7 +86,7 @@ CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 CURLOPT_CUSTOMREQUEST => "POST",
 CURLOPT_POSTFIELDS => $data,
 CURLOPT_HTTPHEADER => array(
-"Authorization: 6a7b52e5-28a5-42d9-a977-9a2e3bc26d22"
+"Authorization: 6c4e704d-86fd-4707-9a30-95d4161ad202"
 ),
 ));
 $response = curl_exec($curl);
@@ -97,7 +97,7 @@ public function ckanresource()
 {
 $curl = curl_init();
 $data = json_encode(array(
-'url' => 'http://103.253.145.248/zaimar/odex/data/sample.csv',
+'url' => 'http://103.253.145.248/razif/odex/data/sample.csv',
 'name' => 'test name',
 'description'=> 'descriptions',
 'format'=>'csv',
@@ -114,7 +114,7 @@ CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 CURLOPT_CUSTOMREQUEST => "POST",
 CURLOPT_POSTFIELDS => $data,
 CURLOPT_HTTPHEADER => array(
-"Authorization: 6a7b52e5-28a5-42d9-a977-9a2e3bc26d22"
+"Authorization: 6c4e704d-86fd-4707-9a30-95d4161ad202"
 ),
 ));
 $response = curl_exec($curl);
