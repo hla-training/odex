@@ -89,7 +89,7 @@ class Welcome extends CI_Controller {
 		CURLOPT_CUSTOMREQUEST => "POST",
 		CURLOPT_POSTFIELDS => $data,
 		CURLOPT_HTTPHEADER => array(
-		"Authorization: 812da15f-19f7-455d-aeb3-f16fcfafc2e8"
+		"Authorization:  071b9681-41e1-45a0-8844-ff4dc0360d89"
 		),
 		));
 		$response = curl_exec($curl);
@@ -101,7 +101,7 @@ class Welcome extends CI_Controller {
 		{
 		$curl = curl_init();
 		$data = json_encode(array(
-		'url' => 'http://103.253.145.248/nash/odex/data/sample.csv',
+		'url' => 'http://103.253.145.248/hazirah/odex/data/sample.csv',
 		'name' => 'test name',
 		'description'=> 'descriptions',
 		'format'=>'csv',
@@ -118,7 +118,7 @@ class Welcome extends CI_Controller {
 		CURLOPT_CUSTOMREQUEST => "POST",
 		CURLOPT_POSTFIELDS => $data,
 		CURLOPT_HTTPHEADER => array(
-		"Authorization: 812da15f-19f7-455d-aeb3-f16fcfafc2e8"
+		"Authorization:  071b9681-41e1-45a0-8844-ff4dc0360d89"
 		),
 		));
 		$response = curl_exec($curl);
