@@ -68,7 +68,7 @@ fclose($fp);
 return false;
 }
 }
-/*
+
 public function ckandataset()
 {
     $curl = curl_init();
@@ -129,5 +129,5 @@ public function datacleaning()
 exec('python3 datacleaning.py');
 }
 
-*/
+
 }
