@@ -73,10 +73,11 @@ class Welcome extends CI_Controller {
 	{
 		$curl = curl_init();
 		$data = json_encode(array(
-		'name' => 'nama dataset',
+		'name' => 'nama',
 		'notes' => 'dataset',
 		'owner_org'=> 'comp_01',
 		));
+		//print_r($data);
 		curl_setopt_array($curl, array(
 		CURLOPT_URL => "https://demo.ckan.org/api/3/action/package_create",
 		CURLOPT_RETURNTRANSFER => true,
