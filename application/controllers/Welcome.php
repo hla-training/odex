@@ -49,6 +49,7 @@ class Welcome extends CI_Controller {
  $response = curl_exec($curl);
  curl_close($curl);
  $results = json_decode($response, true);
+ print_r($results);
  if(strpos($url,'bnm') !== false){
 
  $resultso = $results["data"];
