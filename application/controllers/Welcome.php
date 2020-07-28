@@ -20,7 +20,12 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message to my wall');
+		$this->load->view('welcome_message');
+	}
+
+	public function nash()
+	{
+		$this->load->view('nash');
 	}
 
 	public function getdataapi()
