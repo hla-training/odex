@@ -28,7 +28,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('nash');
 	}
 
-	public function getdataapi()
+public function getdataapi2()
 {
 $curl = curl_init();
 $url = 'https://api.bnm.gov.my/public/interest-rate';
@@ -46,6 +46,7 @@ CURLOPT_HTTPHEADER => array(
 "Access-Control-Allow-Origin: *"
 ),
 ));
+
 $response = curl_exec($curl);
 curl_close($curl);
 $results = json_decode($response, true);
