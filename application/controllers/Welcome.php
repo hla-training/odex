@@ -73,9 +73,9 @@ public function ckandataset2()
 {
     $curl = curl_init();
 $data = json_encode(array(
-'name' => 'nama dataset',
+'name' => 'testrazif',
 'notes' => 'dataset',
-'owner_org'=> 'organisasi',
+'owner_org'=> 'razif-sdn-bhd',
 ));
 curl_setopt_array($curl, array(
 CURLOPT_URL => "https://demo.ckan.org/api/3/action/package_create",
